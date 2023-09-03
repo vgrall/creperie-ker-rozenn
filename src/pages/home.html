@@ -3,15 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <script src="../components/home.js" defer></script>
+    <script src="../composantsJS/home.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/main.css">
 
-
     <title>Crêperie Ker Rozenn</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 </head>
 
 <body>
@@ -21,6 +21,8 @@
         <section class="p-menu1">
             <nav id="navbar" class="navigation" role="navigation">
                 <input id="toggle1" type="checkbox" />
+                <!-- utilisation de label avec un child pour que le menu burger soit clicable et se transforme en croix au clic 
+                améliore l'accessibilité pour les lecteurs d'écran (malvoyants) + meilleurs compatibilité avec les navigateurs et les techs d'assistance-->
                 <label class="hamburger1" for="toggle1">
                     <div class="top"></div>
                     <div class="meat"></div>
@@ -42,97 +44,112 @@
 
             </nav>
         </section>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1 id="kerrozenn">KER ROZENN</h1>
+                <div>
+                    <a href="home.html" class="logo">
+                        <img id="triskell" src="../assets/triskell.png" alt="triskell">
+                    </a>
+                </div>
+                <h2 id="punchline">TA DOSE DE BRETAGNE QUOTIDIENNE</h2>
+                <img id="bilic" src="../assets/bilic.png" alt="bilic">
+            </div>
+        </section>
     </header>
-    <section class="hero">
-        <div class="hero-content">
-            <h1 id="kerrozenn">KER ROZENN</h1>
-            <div>
-                <a href="home.html" class="logo">
-                    <img id="triskell" src="../assets/triskell.png" alt="triskell">
-                </a>
-            </div>
-            <h2 id="punchline">TA DOSE DE BRETAGNE QUOTIDIENNE</h2>
-            <img id="bilic" src="../assets/bilic.png" alt="bilic">
-        </div>
-    </section>
-    </header>
 
 
+    <main>
+        <section class="container-about">
+            <div class="content">
+                <h2>À Propos de Rozenn</h2>
 
-    <section class="container-about">
-        <div class="content">
-            <h2>À Propos de Rozenn</h2>
+                <p>C’est en 1999 que Rozenn Goulmig ouvre pour la première fois les portes de sa crêperie
+                    à l'âge de 19 ans.
 
-            <p>C’est en 1999 que Rozenn Goulmig ouvre pour la première fois les portes de sa crêperie
-                à l'âge de 19 ans.
+                    Son rêve se réalise enfin !
 
-                Son rêve se réalise enfin !
+                    Rozenn a commencé son apprentissage de crêpière, dans la maison familiale de Dahouët, auprès de
+                    sa
+                    grand-mère (dont elle porte le même patronyme) dès l'âge de 6ans.
 
-                Rozenn a commencé son apprentissage de crêpière, dans la maison familiale de Dahouët, auprès de
-                sa
-                grand-mère (dont elle porte le même patronyme) dès l'âge de 6ans.
+                    Elle aimait tellement tourner les galettes, que sa grand-mère lui avait installé un petit
+                    endroit à
+                    sa
+                    hauteur auprès de sa propre bilic.
+                </p>
 
-                Elle aimait tellement tourner les galettes, que sa grand-mère lui avait installé un petit
-                endroit à
-                sa
-                hauteur auprès de sa propre bilic.
-            </p>
-
-            <p>
-                Engagée dans une démarche locavore, Rozenn vous propose des crêpes, des galettes mais aussi des
-                boissons
-                typiques de la Haute Bretagne et dont la qualité ne cesse de ravir les gourmands de tous âges.
-            </p>
-        </div>
-
-        <div class="photo-about">
-
-            <img id="rozenn" src="../assets/rozenn.jpeg" alt="Rozenn" class="rozenn">
-        </div>
-
-    </section>
-
-    <section class="container-carte">
-
-
-
-        <div class="content-carte">
-            <div class="au-menu">
-                <p>Notre Carte<p>
-            </div>
-            <div class="crepe">
-                <a class="link-carte" href="#">
-                    <img id="crepe" src="../assets/crepe.png" alt="crepe" class="crepe">
-                    <p class="p-carte">Ultra-fines, croustillantes sur les bords et moelleuses à cœur</p>
-                </a>
+                <p>
+                    Engagée dans une démarche locavore, Rozenn vous propose des crêpes, des galettes mais aussi des
+                    boissons
+                    typiques de la Haute Bretagne et dont la qualité ne cesse de ravir les gourmands de tous âges.
+                </p>
             </div>
 
-            <div class="galette">
-                <a class="link-carte" href="#">
-                    <img id="galette" src="../assets/galette.png" alt="galette" class="galette">
-                    <p class="p-carte">Recette de Haute-Bretagne au sarrasin.
-                        Garniture au choix
-                    </p>
-                </a>
+            <div class="photo-about">
+
+                <img id="rozenn" src="../assets/rozenn.jpeg" alt="Rozenn" class="rozenn">
             </div>
 
-            <div class="cidre">
-                <a class="link-carte" href="#">
-                    <img id="cidre" src="../assets/cidre.png" alt="cidre" class="cidre">
-                    <p class="p-carte-cidre">Cidres et Chouchens locaux
-                        à déguster bien frais entre amis !
-                    </p>
-                </a>
+        </section>
+
+        <section id="containerCarte" class="container-carte">
+
+            <div class="content-carte">
+                <div class="au-menu">
+                    <p>Notre Carte<p>
+                </div>
+                <div class="crepe">
+                    <a class="link-carte" href="#">
+                        <img id="crepe" src="../assets/crepe.png" alt="crepe" class="crepe">
+                        <p class="p-carte">Ultra-fines, croustillantes sur les bords et moelleuses à cœur</p>
+                    </a>
+                </div>
+
+                <div class="galette">
+                    <a class="link-carte" href="#">
+                        <img id="galette" src="../assets/galette.png" alt="galette" class="galette">
+                        <p class="p-carte">Recette de Haute-Bretagne au sarrasin.
+                            Garniture au choix
+                        </p>
+                    </a>
+                </div>
+
+                <div class="cidre">
+                    <a class="link-carte" href="#">
+                        <img id="cidre" src="../assets/cidre.png" alt="cidre" class="cidre">
+                        <p class="p-carte-cidre">Cidres et Chouchens locaux
+                            à déguster bien frais entre amis !
+                        </p>
+                    </a>
+                </div>
             </div>
-        </div>
+        </section>
+        <section>
+            <div class="pop-up" id="popup">
+                <div class="pop-up-container">
+                    <h3>Tentez de gagner une bouteill de cidre !<br />Tirage au sort tous les premiers lundis du mois
+                    </h3>
+                    <div class="button-container">
+                        <input id="emailField" type="email" placeholder="please enter you email">
+                        <button onclick="obtenirValeurEmail()">Envoyer</button>
+                    </div>
+                    <i class="far fa-times-circle" id="closeBtn"></i>
+                </div>
+            </div>
+        </section>
+    </main>
 
 
-    </section>
+
+
 
 
     <footer class="footer">
         <p id="footer">&copy; 2023 Crêperie Ker Rozenn. Tous droits réservés.</p>
     </footer>
 </body>
+
 
 </html>
