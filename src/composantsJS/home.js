@@ -18,7 +18,7 @@ window.addEventListener("scroll", () => {
   }
   // Popup
 
-  if (scrollValue > 0.45 && playOnce) {
+  if (scrollValue > 0.9 && playOnce) {
     popup.style.opacity = 1;
     popup.style.transform = "none";
     playOnce = false;

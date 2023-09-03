@@ -53,7 +53,7 @@ h1 {
 
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 4.5rem;
     margin: 4rem 0 2rem 0;
     text-align: center;
 }
@@ -268,10 +268,12 @@ AU MENU
     transform: translateX(-100%);
 }
 
+#carte {
+    color: #F1BB46;
+
+}
 
 .au-menu {
-    color: #F1BB46;
-    font-size: 4.5rem;
     margin-top: 1rem;
     text-align: center;
 }
@@ -336,16 +338,16 @@ POP-UP CONCOURS
 
 .pop-up {
     position: fixed;
-    right: 1rem;
+    right: 2rem;
     bottom: 2rem;
-    height: 250px;
-    width: 520px;
+    height: 120px;
+    width: 90%;
     text-align: center;
     background: linear-gradient(90deg, #F1BB46, rgb(252, 225, 166));
-    border-radius: 76% 24% 90% 10% / 20% 85% 15% 80%;
+    border-radius: 10% 10% 10% 10% / 20% 20% 20% 20%;
     box-shadow: 0 5px 10px black;
     opacity: 0;
-    transform: translateX(0px);
+    transform: translateX(45px);
     transition: 1s ease-out;
 }
 
@@ -418,6 +420,48 @@ POP-UP CONCOURS
     transform: scale(1.5);
 }
 
+
+/* *****************************************************************
+NOS VALEURS
+***************************************************************** */
+.container-valeurs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 4rem;
+}
+
+#valeurs {
+    text-align: left;
+    color: #3B3939;
+}
+
+#contentValues {
+    text-align: left;
+
+}
+
+.nosValeurs {
+    background-color: #F1BB46;
+    border-radius: 10%;
+}
+
+.fa-solid {
+    background-color: #3B3939;
+    color: white;
+    width: 10%;
+    border-radius: 50% / 100%;
+}
+
+.valeursP {
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding-left: 1rem;
+
+}
+
 /* *****************************************************************
 ECRAN de 600 @ 768px
 ***************************************************************** */
@@ -486,7 +530,15 @@ ECRAN de 769 @ 1024px
     }
 
 
+    .pop-up {
 
+        right: 2rem;
+        bottom: 0rem;
+        height: 110px;
+        width: 520px;
+
+
+    }
 
 
 }
@@ -575,8 +627,53 @@ ECRAN de 1025 ET +
 
     }
 
+    /* *****************************************************************
+POP-UP CONCOURS
+***************************************************************** */
+
+    .pop-up {
+
+        right: 1rem;
+        bottom: -0rem;
+        height: 110px;
+        width: 520px;
+    }
+
+    .fa-times-circle {
+
+        left: 4rem;
+        top: 0.7rem;
+    }
 
 
+
+
+    /* *****************************************************************
+NOS VALEURS
+***************************************************************** */
+    .container-valeurs {
+
+        flex-direction: row;
+        margin: 1rem 10rem;
+    }
+
+
+    #contentValues {
+        padding-right: 3rem;
+    }
+
+    .nosValeurs {
+        border-radius: 5%;
+        margin-top: 2rem;
+        padding-top: 2rem;
+    }
+
+    .valeursP {
+        font-size: 1.8rem;
+        padding-left: 3rem;
+        margin-right: 3rem;
+
+    }
 
 
 }
