@@ -17,33 +17,30 @@
 
 <body>
 
-
     <header class="header">
+
         <section class="p-menu1">
-            <nav id="navbar" class="navigation" role="navigation">
-                <input id="toggle1" type="checkbox" />
-                <!-- utilisation de label avec un child pour que le menu burger soit clicable et se transforme en croix au clic 
-                améliore l'accessibilité pour les lecteurs d'écran (malvoyants) + meilleurs compatibilité avec les navigateurs et les techs d'assistance-->
-                <label class="hamburger1" for="toggle1">
-                    <div class="top"></div>
-                    <div class="meat"></div>
-                    <div class="bottom"></div>
-                </label>
 
-                <nav id="container-menu" class="menu1">
-                    <ul id="menu" class="nav-list">
-                        <li><a class="link" href="#">Accueil</a></li>
-                        <li><a class="link1" href="">A-Propos</a></li>
-                        <li><a class="link1" href="">Carte</a></li>
-                        <li><a class="link1" href="">Nos Valeurs</a></li>
-                        <li><a class="link1" href="">Votre Avis</a></li>
-                        <li><a class="lin1 kbutton-nav" href="">Contact</a></li>
-                    </ul>
-                </nav>
+            <div id="mySidenav" class="sidenav">
+                <a id="closeBtn" href="#" class="close">×</a>
+                <ul>
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="#">A propos</a></li>
+                    <li><a href="#">Nos services</a></li>
+                    <li><a href="#">Témoignages</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
 
+            <a href="#" id="openBtn">
+                <span class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>
 
 
-            </nav>
         </section>
 
         <section class="hero">
@@ -57,6 +54,11 @@
             </div>
 
         </section>
+        <section class="p-menu1">
+
+
+        </section>
+
 
 
     </header>
@@ -100,7 +102,7 @@
 
             <div class="content-carte">
                 <div class="au-menu">
-                    <h2 id="carte">Notre Carte<h2>
+                    <p id="carte">Notre Carte<p>
                 </div>
                 <div class="crepe">
                     <a class="link-carte" href="#">
