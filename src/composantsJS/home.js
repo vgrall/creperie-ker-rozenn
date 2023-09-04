@@ -7,7 +7,7 @@ let openBtn = document.getElementById("openBtn");
 let closeBtn = document.getElementById("closeBtn");
 
 openBtn.onclick = openNav;
-closeBtn.onclick = closeNav;
+closeButton.onclick = closeNav;
 
 /* Set the width of the side navigation to 250px */
 function openNav() {
