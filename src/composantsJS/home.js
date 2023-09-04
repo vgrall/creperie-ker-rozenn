@@ -42,20 +42,6 @@ setTimeout(() => {
   typewriter(txt, 0);
 }, 300);
 
-// Ajoute un écouteur d'événements pour gérer le clic sur l'élément "heroPushLink".
-heroPushLink.addEventListener("click", slideDown);
-
-// Crée une fonction appelée "slideDown" pour faire défiler la page vers le bas.
-function slideDown(e) {
-  // Empêche le comportement par défaut du lien (ne pas suivre le lien).
-  e.preventDefault();
-  // Fait défiler la page vers le haut de l'élément cible spécifié dans le lien.
-  window.scrollTo({
-    top: document.querySelector(`${e.target.getAttribute("href")}`).offsetTop,
-    behavior: "smooth", // Fait défiler en douceur plutôt que brusquement.
-  });
-}
-
 /* *****************************************************************
 EFFET DE SCROLL et POPUP (menu carte et concours)
 ***************************************************************** */
@@ -91,6 +77,7 @@ closeBtn.addEventListener("click", () => {
 /* *****************************************************************
 RECUPERATION DE LA VALEUR EMAIL
 ***************************************************************** */
+
 function obtenirValeurEmail() {
   // Récupérez l'élément input par son ID
   let champEmail = document.getElementById("emailField");
@@ -103,6 +90,9 @@ function obtenirValeurEmail() {
   if (regex.test(valeurEmail)) {
     // L'adresse e-mail est valide, vous pouvez la traiter ici
     console.log("Adresse e-mail valide : " + valeurEmail);
+
+    // Effacez le champ email après validation
+    champEmail.value = "";
   } else {
     // L'adresse e-mail est invalide, affichez un message d'erreur ou effectuez une action appropriée
     alert(
