@@ -8,6 +8,7 @@ let closeBtn = document.getElementById("closeBtn");
 
 openBtn.onclick = openNav;
 closeButton.onclick = closeNav;
+sidenav.onclick = clicCloseNav;
 
 /* Set the width of the side navigation to 250px */
 function openNav() {
@@ -19,10 +20,15 @@ function closeNav() {
   sidenav.classList.remove("active");
 }
 
+function clicCloseNav() {
+  sidenav.classList.remove("active");
+}
 /* *****************************************************************
 ANIMATION TITRE KER ROZENN
 ***************************************************************** */
 document.addEventListener("DOMContentLoaded", function () {
+  // Attend que le DOM soit chargé.
+
   // Déclare plusieurs variables et les relie à des éléments HTML spécifiques.
   const title = document.querySelector("h1");
   const txt = "KER ROZENN";
