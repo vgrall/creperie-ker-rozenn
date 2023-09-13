@@ -61,3 +61,19 @@ function updateSlides() {
 //le bouton gauche ou droit, il affichera respectivement la diapositive précédente ou suivante.
 
 // *********************************************************************************************************************
+
+document
+  .getElementById("satisfactionForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const formData = new FormData(event.target);
+    const data = {};
+
+    formData.forEach((value, key) => {
+      data[key] = value;
+    });
+
+    // Vous pouvez maintenant envoyer les données à votre serveur ou les traiter ici
+    console.log(data);
+  });
