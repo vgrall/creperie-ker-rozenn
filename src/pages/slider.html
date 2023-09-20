@@ -55,6 +55,12 @@
     <main>
 
         <section>
+            <div id="successModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Votre avis a été envoyé avec succès!</p>
+                </div>
+            </div>
             <div class="container">
                 <h2>Formulaire de Satisfaction</h2>
                 <p>Merci de prendre quelques instants pour nous donner votre avis sur votre expérience au restaurant.
@@ -62,8 +68,8 @@
                 <form method="POST" id="satisfactionForm">
 
                     <div class="form-group">
-                        <label for="prenom">Prénom:</label>
-                        <input type="text" id="name" name="name" required>
+                        <label for="firstName">Prénom:</label>
+                        <input type="text" id="firstName" name="name" required>
                     </div>
                     <div class="form-group">
                         <label for="name">Nom:</label>
@@ -100,39 +106,58 @@
 
         <h2>Les derniers avis</h2>
         <div class="slider-container">
-
-            <button class="directionBtn left">
-                <img src="../assets/left-arrow.png" alt="left arrow">
-
+            <button class="direction-btn left">
+                <img src="../assets/left-chevron.svg" alt="left arrow">
+            </button>
+            <button class="direction-btn right">
+                <img src="../assets/right-chevron.svg" alt="right arrow">
             </button>
 
-            <button class="directionBtn right">
-                <img src="../assets/chevron.png" alt="right arrow">
-            </button>
-
-            <div class="slide slide 1 active">
-
+            <div class="slide slide-1 active">
                 <div class="content">
-                    <img src="../assets/avis1.png" alt="photo et avis de Tony Manero">
+                    <img src="../assets/tonyManero.png" alt="photo et avis de Tony Manero">
+                    <h2>Tony</h2>
+                    <p>Le restaurant est très sympathique, le personnel également,
+                        et les plats sont délicieux. Je recommande vivement !
+                    </p>
+
                 </div>
             </div>
-
-            <div class="slide slide 2 ">
+            <div class="slide slide-2">
                 <div class="content">
-                    <img src="../assets/avis2.png" alt="photo et avis de Gloria Esteban ">
+                    <img src="../assets/SophieLagirafe.png" alt="photo et avis de Sophie Lagirafe">
+                    <h2>Sophie</h2>
+                    <p>Toujours très bon, avec des produits de qualité,
+                        j'y retourne avec plaisir !!
+                    </p>
+
                 </div>
             </div>
-
-            <div class="slide slide 3 ">
+            <div class="slide slide-3">
                 <div class="content">
-                    <img src="../assets/avis3.png" alt="photo et avis de Sophie Lagirafe">
+                    <img src="../assets/GloriaEstafan.png" alt="photo et avis de Gloria Estafan">
+                    <h2>Gloria</h2>
+                    <p>Atmosphère familiale.
+                        Produits bio ou d'origine artisanale,
+                        Recettes originales et de qualité,
+                        Et les Cidre et jus de pomme de la cidrerie de la baie....
+                        d'exception (gouter le cidre au houblon !!!)
+                        Allez-y les yeux fermés.... Vous y reviendrez !
+                    </p>
+
                 </div>
             </div>
-
-            <div class="slide slide 4 ">
+            <div class="slide slide-4">
                 <div class="content">
-                    <img src="../assets/avis4.png" alt="photo et avis de Parker Lewis">
+                    <img src="../assets/parkerLewis.png" alt="photo et avis de Parker LewisNePerdJamais">
+                    <h2>Parker</h2>
+                    <p>Je recommande a 100% les galettes et crêpes sont excellentes et le personnel est très souriant et
+                        accueillant endroit très chaleureux ou l ont a envie de retourner quand on a tester
+                    </p>
+
                 </div>
+                <!-- photos téléchargées sur le site "https://thispersondoesnotexist.com/" -->
+
             </div>
 
         </div>
